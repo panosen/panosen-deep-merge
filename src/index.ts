@@ -1,9 +1,9 @@
 ﻿export default class DeepMerge {
 
-    static mergeObject(...objects: Object[]): Object {
+    static mergeObject<T>(...objects: Partial<T>[]): T {
         var item: Object = {};
         if (!objects) {
-            return item;
+            return item as T;
         }
 
         for (var index = 0, length = objects.length; index < length; index++) {
@@ -16,7 +16,7 @@
             this.mergeObjectItem(item, objects[index]);
         }
 
-        return item;
+        return item as T;
     }
 
     private static mergeObjectItem(to: { [key: string]: any }, from: { [key: string]: any }): void {

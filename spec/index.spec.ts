@@ -64,7 +64,7 @@ describe("DeepMerge", () => {
             }
         }
 
-        var actual = DeepMerge.mergeObject(a, b, c, d, e, f, g, h, i, j, k, l);
+        var actual = DeepMerge.mergeObject(a, b, c, d, e, f, g, h as any, i as any, j as any, k as any, l as any);
 
         var expectedText = JSON.stringify(expected);
         var actualText = JSON.stringify(actual);
