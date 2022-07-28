@@ -31,5 +31,4 @@ jobs:
         token: ${{ secrets.NPM_TOKEN }}
         package: ./package.json
         access: public
-        dry-run: true
 
