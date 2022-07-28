@@ -1,0 +1,23 @@
+{
+  "name": "@panosen/deep-merge",
+  "version": "0.1.0",
+  "description": "panosen deep merge",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --module ES2020",
+    "test": "npx jasmine --config=jasmine.json"
+  },
+  "files": [
+    "dist/src/**/*"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^4.0.3",
+    "jasmine": "^4.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {}
+}
