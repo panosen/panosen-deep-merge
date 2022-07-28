@@ -1,9 +1,9 @@
 {
   "name": "@panosen/deep-merge",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "panosen deep merge",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
   "scripts": {
     "build": "tsc --module ES2020",
     "test": "npx jasmine --config=jasmine.json"
